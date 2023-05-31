@@ -28,7 +28,7 @@ public class LoginPage {
 	private By emailId = By.id("input-email");
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[@value ='Login']");
-	private By forgotPwdlink = By.linkText("Forgotten Password11");
+	private By forgotPwdlink = By.linkText("Forgotten Password");
 	private By footerLinks=By.xpath("//footer//a");
 	private By searchTextbox=By.name("search");//p
 	private By headerNewCustomer = By.xpath("//h2[text()='New Customer']");//p
