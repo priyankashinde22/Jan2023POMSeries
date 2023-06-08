@@ -92,27 +92,25 @@
 				<configuration>
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
-					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>
-							src/main/resources/testrunners/testng_regression.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>src/main/resources/testrunners/testng_regression.xml</suiteXmlFile> -->
+						 <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> 
+
 					</suiteXmlFiles>
 
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
 
-					
 
 				</configuration>
 				<dependencies>
-						<dependency>
-							<groupId>org.aspectj</groupId>
-							<artifactId>aspectjweaver</artifactId>
-							<version>${aspectj.version}</version>
-						</dependency>
-					</dependencies>
-
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
 
 
 			</plugin>
